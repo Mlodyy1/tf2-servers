@@ -54,6 +54,7 @@ ARG TF2RUE_PLUGIN_FILE_NAME=tf2rue.zip
 ARG TF2RUE_PLUGIN_VERSION=v0.0.9
 ARG TF2RUE_PLUGIN_URL=https://github.com/sapphonie/tf2rue/releases/download/${TF2RUE_PLUGIN_VERSION}/${TF2RUE_PLUGIN_FILE_NAME}
 
+
 RUN \
   # download all the plugins
   wget -nv "${SOAP_DM_PLUGIN_URL}" "${COMP_FIXES_PLUGIN_URL}" "${UPDATED_PAUSE_PLUGIN_URL}" "${NEOCURL_PLUGIN_URL}" \
@@ -98,3 +99,5 @@ ENV LOGS_TF_APIKEY=
 
 COPY cfg/* ${SERVER_DIR}/tf/cfg/
 COPY plugins/* ${SERVER_DIR}/tf/addons/sourcemod/plugins/
+COPY data/* ${SERVER_DIR}/tf/addons/sourcemod/data/
+COPY extensions/* ${SERVER_DIR}/tf/addons/sourcemod/extensions/
