@@ -29,7 +29,7 @@ jobs:
         id: docker_meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ env.REGISTRY }}/melkortf/tf2-base
+          images: ${{ env.REGISTRY }}/mlodyy1/tf2-base
           tags: |
             type=sha,format=long
             type=schedule,pattern=nightly
@@ -70,7 +70,7 @@ jobs:
         id: docker_meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ env.REGISTRY }}/melkortf/tf2-sourcemod
+          images: ${{ env.REGISTRY }}/mlodyy1/tf2-sourcemod
           tags: |
             type=sha,format=long
             type=schedule,pattern=nightly
@@ -111,7 +111,7 @@ jobs:
         id: docker_meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ env.REGISTRY }}/melkortf/tf2-mge
+          images: ${{ env.REGISTRY }}/mlodyy1/tf2-mge
           tags: |
             type=sha,format=long
             type=schedule,pattern=nightly
@@ -152,7 +152,7 @@ jobs:
         id: docker_meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ env.REGISTRY }}/melkortf/tf2-competitive
+          images: ${{ env.REGISTRY }}/mlodyy1/tf2-competitive
           tags: |
             type=sha,format=long
             type=schedule,pattern=nightly
@@ -193,7 +193,7 @@ jobs:
         id: docker_meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ env.REGISTRY }}/melkortf/tf2-dm
+          images: ${{ env.REGISTRY }}/mlodyy1/tf2-dm
           tags: |
             type=sha,format=long
             type=schedule,pattern=nightly
