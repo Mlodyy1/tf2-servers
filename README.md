@@ -21,8 +21,8 @@
 $ docker run \
   -v "maps:/home/tf2/server/tf/maps" \
   -e "RCON_PASSWORD=foobar123" \
-  -e "SERVER_HOSTNAME=melkor.tf" \
-  -e "STV_NAME=melkor TV" \
+  -e "SERVER_HOSTNAME=A Team Fortress 2 Server" \
+  -e "STV_NAME=Source TV" \
   --network=host \
   ghcr.io/mlodyy1/tf2-base
 ```
@@ -107,6 +107,7 @@ TF2 server configured to be used in competitive matches. The following plugins, 
 - [demos.tf](https://github.com/demostf/plugin)
 - [ETF2L.org configs](https://github.com/ETF2L/gameserver-configs)
 - [RGL.gg configs](https://github.com/RGLgg/server-resources-updater/tree/master/cfg)
+- [ETF2LDivs](https://github.com/suprovsky/ETF2LDivs)
 
 | Environment variable | Default value | Used in                                | Description                                                           |
 | -------------------- | ------------- | -------------------------------------- | --------------------------------------------------------------------- |
